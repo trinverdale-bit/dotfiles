@@ -1,0 +1,10 @@
+theme = rose-pine
+background = 000000
+font-size = 16
+
+cursor-color = #ffffff
+cursor-style = block
+cursor-style-blink = false
+mouse-hide-while-typing = true
+
+shell-integration-features = no-cursor,no-sudo,title
