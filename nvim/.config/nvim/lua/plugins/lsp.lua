@@ -59,7 +59,9 @@ return {
                             }
                         }
                     }
-
+                end,
+                ["gopls"] = function()
+                    local lspconfig = require("lspconfig")
                     lspconfig.gopls.setup {
                         capabilities = capabilities,
                         cmd = { "gopls" },
@@ -74,7 +76,7 @@ return {
                             }
                         }
                     }
-                end,
+                end
             }
         })
 
