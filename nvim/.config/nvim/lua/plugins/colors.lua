@@ -4,8 +4,8 @@ function ColorMyPencils(color)
 
     vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
     vim.api.nvim_set_hl(0, "NormalNC", { bg = "none" })
-    --vim.api.nvim_set_hl(0, "@function.method.call", { fg = "#ebbcba", bold = false })
-    --vim.api.nvim_set_hl(0, "@module", { fg = "#31748f", bold = false })
+    vim.api.nvim_set_hl(0, "@function.method.call", { fg = "#ebbcba", bold = false })
+    vim.api.nvim_set_hl(0, "@module", { fg = "#31748f", bold = false })
 end
 
 return {
