@@ -124,4 +124,3 @@ vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(
     max_width = 80,
   }
 )
-
