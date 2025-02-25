@@ -114,3 +114,14 @@ autocmd('LspAttach', {
         vim.keymap.set("n", "]d", function() vim.diagnostic.goto_prev() end, opts)
     end
 })
+
+vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(
+  vim.lsp.handlers.hover, {
+    border = "rounded",
+    focusable = true,
+    style = "minimal",
+    blend = 100,
+    max_width = 80,
+  }
+)
+
