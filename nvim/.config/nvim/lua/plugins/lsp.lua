@@ -98,7 +98,14 @@ return {
                 { name = 'luasnip' }, -- For luasnip users.
             }, {
                 { name = 'buffer' },
-            })
+            }),
+            window = {
+                documentation = cmp.config.window.bordered({
+                    border = "rounded",
+                    winhighlight = "NormalFloat:NormalFloat,FloatBorder:FloatBorder", -- Styling
+                    zindex = 1001,
+                }),
+            },
         })
 
         vim.diagnostic.config({
