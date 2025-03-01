@@ -1,7 +1,7 @@
 theme = rose-pine
 background = 0C0800
 background-opacity = 0.8
-font-size = 17
+font-size = 16
 font-family = FiraMono Nerd Font
 
 cursor-color = #ffffff
