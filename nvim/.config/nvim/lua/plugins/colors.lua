@@ -16,7 +16,6 @@ function ColorMyPencils(color)
         pattern = "TelescopePrompt,TelescopeResults",
         callback = function()
             vim.api.nvim_set_hl(0, "NormalFloat", { bg = "#1e1e2e" })
-            vim.api.nvim_set_hl(0, "FloatBorder", { fg = "#cdd6f4", bg = "#1e1e2e" })
         end,
     })
 
