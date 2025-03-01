@@ -3,7 +3,23 @@ function ColorMyPencils(color)
     vim.cmd.colorscheme(color)
 
     vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
-    vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
+    vim.api.nvim_set_hl(0, "NormalNC", { bg = "none" })
+
+    vim.api.nvim_create_autocmd("FileType", {
+        pattern = "harpoon",
+        callback = function()
+            vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
+        end,
+    })
+
+    vim.api.nvim_create_autocmd("FileType", {
+        pattern = "TelescopePrompt,TelescopeResults",
+        callback = function()
+            vim.api.nvim_set_hl(0, "NormalFloat", { bg = "#1e1e2e" })
+            vim.api.nvim_set_hl(0, "FloatBorder", { fg = "#cdd6f4", bg = "#1e1e2e" })
+        end,
+    })
+
     vim.api.nvim_set_hl(0, "@function.method.call", { fg = "#ebbcba", bold = false })
     vim.api.nvim_set_hl(0, "@module", { fg = "#31748f", bold = false })
 end
