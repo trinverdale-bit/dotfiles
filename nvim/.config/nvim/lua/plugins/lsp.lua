@@ -97,12 +97,17 @@ return {
                 { name = 'nvim_lsp' },
                 { name = 'luasnip' }, -- For luasnip users.
             }, {
-                { name = 'buffer' },
+                    { name = 'buffer' },
+                }),
+            completion = cmp.config.window.bordered({
+                border = "rounded",
+                winhighlight = "NormalFloat:NormalFloat,FloatBorder:FloatBorder,PmenuSel:PmenuSel",
+                zindex = 1001,
             }),
             window = {
                 documentation = cmp.config.window.bordered({
                     border = "rounded",
-                    winhighlight = "NormalFloat:NormalFloat,FloatBorder:FloatBorder", -- Styling
+                    winhighlight = "NormalFloat:NormalFloat,FloatBorder:FloatBorder",
                     zindex = 1001,
                 }),
             },
