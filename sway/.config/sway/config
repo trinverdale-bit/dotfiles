@@ -21,7 +21,7 @@ set $menu wofi --show run
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in @datadir@/backgrounds/sway/)
-output * bg ~/wallpapers/onedark.png fill
+output * bg ~/wallpapers/city-scape.gif fill
 #
 # Example configuration:
 #
