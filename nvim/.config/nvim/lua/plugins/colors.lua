@@ -3,21 +3,25 @@ function ColorMyPencils(color)
     vim.cmd.colorscheme(color)
 
     vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
-    vim.api.nvim_set_hl(0, "NormalNC", { bg = "none" })
+    vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
 
+    --[[
     vim.api.nvim_create_autocmd("FileType", {
         pattern = "harpoon",
         callback = function()
             vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
         end,
     })
+    --]]
 
+    --[[
     vim.api.nvim_create_autocmd("FileType", {
         pattern = "TelescopePrompt,TelescopeResults",
         callback = function()
             vim.api.nvim_set_hl(0, "NormalFloat", { bg = "#1e1e2e" })
         end,
     })
+    --]]
 
     --vim.api.nvim_set_hl(0, "CmpItemAbbrMatch", { fg = "#ffffff", bold = true })
     --vim.api.nvim_set_hl(0, "CmpItemAbbrMatchFuzzy", { fg = "#ffffff", bold = true })
