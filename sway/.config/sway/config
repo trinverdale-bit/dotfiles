@@ -218,3 +218,7 @@ bar {
 
 include @sysconfdir@/sway/config.d/*
 for_window [class=".*"] border pixel 1
+
+input "2:7:SynPS/2_Synaptics_TouchPad" {
+    tap enabled
+}

@@ -39,6 +39,8 @@ return {
                 "emmet_ls",
             },
 
+            automatic_installation = false,
+
             handlers = {
                 function(server_name) -- default handler (optional)
                     require("lspconfig")[server_name].setup {
