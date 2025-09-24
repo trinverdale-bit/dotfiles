@@ -1,5 +1,5 @@
 function ColorMyPencils(color)
-    color = color or "rose-pine-moon"
+    color = color or "rose-pine"
     vim.cmd.colorscheme(color)
 
     vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
@@ -19,10 +19,10 @@ function ColorMyPencils(color)
         end,
     })
 
-    --vim.api.nvim_set_hl(0, "CmpItemAbbrMatch", { fg = "#ffffff", bold = true })
-    --vim.api.nvim_set_hl(0, "CmpItemAbbrMatchFuzzy", { fg = "#ffffff", bold = true })
-    --vim.api.nvim_set_hl(0, "@function.method.call", { fg = "#ebbcba", bold = false })
-    --vim.api.nvim_set_hl(0, "@module", { fg = "#31748f", bold = false })
+    vim.api.nvim_set_hl(0, "CmpItemAbbrMatch", { fg = "#ffffff", bold = true })
+    vim.api.nvim_set_hl(0, "CmpItemAbbrMatchFuzzy", { fg = "#ffffff", bold = true })
+    vim.api.nvim_set_hl(0, "@function.method.call", { fg = "#ebbcba", bold = false })
+    vim.api.nvim_set_hl(0, "@module", { fg = "#31748f", bold = false })
 end
 
 return {
@@ -33,7 +33,7 @@ return {
             disable_background = true,
             styles = {
                 italic = false,
-                --bold = false,
+                bold = false,
             },
         })
 

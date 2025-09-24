@@ -10,5 +10,8 @@ alias suspend="systemctl suspend"
 alias bnctl="brightnessctl set 1%"
 alias wifi="nm-applet"
 export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin
+export TERM=screen-256color
+unset COLORTERM
 
 [ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
+
